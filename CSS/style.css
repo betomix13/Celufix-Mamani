@@ -8,9 +8,17 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     background-image: url(../images/fondophon.jpg);
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center;*/
+    animation: mov 50s infinite linear alternate;
+
+}
+@keyframes mov{
+   from{
+    background-position: bottom left ;
+ }to{background-position: top right;
+}
 }
 h1{font-size: 3.5em;}
 h2{font-size: 2.7em;}
@@ -25,7 +33,9 @@ button{
     color: gray;
     background-color: #141c2b;
 }
-
+.button:hover{
+    background-color:#04b3fa ;
+}
 
 .container{
     max-width: 1400px;
@@ -66,7 +76,10 @@ header a{
     transition: all 500ms ease;
     border: 4px solid transparent;
 }
-
+header a:hover{
+    color:#04b3fa;
+    border-bottom: 4px solid ;
+}
 
 #hero{
     display: flex;
@@ -170,7 +183,13 @@ header a{
     color: rgb(29, 23, 55);
     border: 4px solid #04b3fa;
 }
-
+.formulario form button:hover,
+.formulario form button:focus {
+    background: #181430;
+    color: rgb(7, 236, 7);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
 .formulario form button {
     background: #04b3fa;
     border: 0;
