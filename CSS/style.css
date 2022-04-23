@@ -174,9 +174,12 @@ body{
 
 /*====================CARRUSEL=====================================*/
 
-/*.carousel-inner{
-    max-height:auto;
-}*/
+.carousel-inner{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    }
 @-webkit-keyframes zoom {
     from {
       -webkit-transform: scale(1, 1);
@@ -198,7 +201,9 @@ body{
   .carousel-inner .item > img {
     -webkit-animation: zoom 20s;
     animation: zoom 20s;
+    
   }
+  
 /*======================CONTACTO=====================================*/
 .form-control{
     border: 4px solid #04b3fa;
