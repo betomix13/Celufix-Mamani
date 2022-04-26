@@ -45,14 +45,16 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background: none;
   }
   
   .container1 .card {
     position: relative;
     background: none;
+    border: none;
   }
+
   
   .container1 .card .cover {
     width: 300px;
@@ -63,7 +65,7 @@ body{
   .container1 .card .cover.closed {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 1;
     transform: translateY(200px);
@@ -279,6 +281,6 @@ body{
         position: relative;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
       }
 }
