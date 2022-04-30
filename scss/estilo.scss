@@ -1,7 +1,8 @@
 /*===================Globales======================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
-
+@import "reset";
+@import "variables";
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -18,12 +19,12 @@ body{
 /*====================MENU=====================================*/
 #menu a{
     align-items: flex-end;
-    color: rgb(247, 247, 247);
+    color: $color2;
     font-size: 20px;
     transition: all 500ms ease;
     border: 4px solid transparent;
     &:hover{
-        color:#04b3fa;
+        color:$color1;
         border-bottom: 4px solid ;
     }
     p{
@@ -121,7 +122,7 @@ body{
     margin-top: 12px;
     font-family: roboto;
     .title {
-        color: #04b3fa;
+        color:$color1;
         font-weight: bold;
         font-size: 20px;
       }
@@ -192,7 +193,7 @@ body{
     
 /*======================CONTACTO=====================================*/
 .form-control{
-    border: 4px solid #04b3fa;
+    border: 4px solid $color1;
 }
 /*======================RESEÑAS=====================================*/
 #nuestros-servicios p{
@@ -326,8 +327,8 @@ body{
 
 /*=================================FOOOOOTER============================*/
 .pie{
-    color: rgb(49, 46, 46);
-    background-color: rgb(150, 178, 255);
+    color: $colorfooter1;
+    background-color: $colorfooter2;
     text-align: center;
     margin-top: 15px;
     
