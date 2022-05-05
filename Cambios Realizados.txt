@@ -1,0 +1,5 @@
+agregue keywords en lineas 7 y 8 
+aplique variables en los colores en lineas 22, 27
+aplique extend en linea scss 142 a 159
+aplique map-get en lineas scss 20 a 30
+aplique mixin en lineas scss 49 a 54

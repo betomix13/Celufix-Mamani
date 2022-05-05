@@ -17,12 +17,17 @@ body{
  }
 
 /*====================MENU=====================================*/
+$estilos:(
+  color: $color2,
+  tfuente: 20px,
+  eborde: 4px solid transparent
+);
 #menu a{
     align-items: flex-end;
-    color: $color2;
-    font-size: 20px;
+    color: map-get($estilos, color);
+    font-size: map-get($map: $estilos, $key: tfuente);
     transition: all 500ms ease;
-    border: 4px solid transparent;
+    border: map-get($map: $estilos, $key: eborde );
     &:hover{
         color:$color1;
         border-bottom: 4px solid ;
@@ -41,10 +46,12 @@ body{
 
 /*====================TRABAJOS=====================================*/
   
-
+@mixin tamanio ($ancho, $lugar) {
+  width: $ancho;
+  position: $lugar;
+}
 .container1 {
-    width: auto;
-    position: relative;
+    @include tamanio(auto, relative);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,23 +146,23 @@ body{
           }
       }
   }
-  .celulares {
-    background-image: url(../images/celu1.jpg);
-    
+  %base{
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  .celulares {
+    background-image: url(../images/celu1.jpg);
+    @extend %base;
   }
   
   .tablets {
     background-image: url(../images/tab1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    @extend %base;
   }
   
   .notebooks {
     background-image: url(../images/not1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    @extend %base;
   }
   
   

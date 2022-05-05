@@ -145,22 +145,21 @@ body {
   font-weight: 300;
 }
 
-.celulares {
-  background-image: url(../images/celu1.jpg);
+.notebooks, .tablets, .celulares {
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.celulares {
+  background-image: url(../images/celu1.jpg);
 }
 
 .tablets {
   background-image: url(../images/tab1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .notebooks {
   background-image: url(../images/not1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 /*====================CARRUSEL=====================================*/
