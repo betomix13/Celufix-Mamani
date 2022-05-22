@@ -105,7 +105,7 @@ $estilos:(
             justify-content: space-around;
             align-items: center;
             z-index: 1;
-            transform: translateY(200px);
+            transform: translateY(0px);
             &:hover{
             transform: translateY(0);
             .card_content {
@@ -171,9 +171,10 @@ $estilos:(
 
 .carousel-inner{
     width: auto;
+    padding-left: 0;
     height: auto;
     display: flex;
-    justify-content: center;
+      
     .item > img {
         -webkit-animation: zoom 20s;
         animation: zoom 20s;
@@ -357,4 +358,10 @@ $estilos:(
         flex-direction: row;
         justify-content: space-around;
       }
+    .carousel-inner{
+      padding-left: 25%;
+    }
+    .container1 .card .closed{
+      transform: translateY(200px);
+    }
 }

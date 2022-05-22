@@ -104,7 +104,7 @@ body {
   justify-content: space-around;
   align-items: center;
   z-index: 1;
-  transform: translateY(200px);
+  transform: translateY(0px);
 }
 .container1 .closed:hover {
   transform: translateY(0);
@@ -165,9 +165,9 @@ body {
 /*====================CARRUSEL=====================================*/
 .carousel-inner {
   width: auto;
+  padding-left: 0;
   height: auto;
   display: flex;
-  justify-content: center;
 }
 .carousel-inner .item > img {
   -webkit-animation: zoom 20s;
@@ -355,6 +355,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .carousel-inner {
+    padding-left: 25%;
+  }
+
+  .container1 .card .closed {
+    transform: translateY(200px);
   }
 }
 
